@@ -4,7 +4,15 @@ You can use the [editor on GitHub](https://github.com/Victordeyu/DailyLearn/edit
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### KMP算法
+# KMP算法
+
+## 如何获得next
+
+### 对于一个0开头的next数组。next[0]=0 next[1]=1。
+
+### 当j>1时,会根据next[j-1]来计算，具体如下：
+
+
 
 ### Markdown
 
