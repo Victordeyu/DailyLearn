@@ -20,7 +20,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
   
   接下来，我们从一张图来看现在的匹配情况。如图是整个Pattern（待匹配字符串）的一部分。可以看到next[J-1]-1标识了红色部分的长度（即J-1元素的前后缀最大匹配数）。而next[J-1]则标识了可匹配的前缀后的第一个元素。
   
-  ![Image]https://github.com/Victordeyu/DailyLearn/blob/gh-pages/KMP/getNext.png
+  ![Image](https://github.com/Victordeyu/DailyLearn/blob/gh-pages/KMP/getNext.png)
   
   我们记P_next[J-1]为元素n。P_next[j-1]!=P_[j-1]意味着红色部分无法被延长，只能被缩短。如果从P_[next[J-1]-1]开始匹配会浪费大量时间。此时我们会发现，next[N]-1已经标记了元素N在前面的红色子串中可匹配的最大前后缀的长度。而next[N]正是它在红色字串中无法匹配的第一个前缀，记为M。此时，我们可以直接用M来与P[J-1]来匹配。因为两端红色的字串是完全一样的，这意味着在P[J-1]前也有一段完全一样的相同字串。我们以此循环往复来搜寻整个红色字串中与它匹配的最大前缀。
 
