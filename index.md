@@ -10,6 +10,11 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### 对于一个0开头的next数组。next[0]=0 next[1]=1。
 
+### 对字母的解释
+
+#### j数值的解释:
+	     计算第n个元素的next值时，j的值就是前n-2个字符所构成子串的next值（next[n-1])
+
 ### 当j>1时,会根据next[j-1]来计算，具体如下：
 
   我们先把j向后移动一位，从而生成了新的字串，记为S_[j]。next[j]即为新字串P_[1]...P_[j-1]的前后缀最大匹配数（+1）。
