@@ -4,13 +4,17 @@ You can use the [editor on GitHub](https://github.com/Victordeyu/DailyLearn/edit
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-# KMP算法
+# 二叉树的遍历
 
-### InOrder and PostOrder
+### PreOrder and PostOrder
 
 ####  N L R
 ####  L R N
 
+  可以看出前序和后序的区别在于叶子结点群与根结点群位置关系的不同。具体地说，如果某两个结点的关系为父子（祖先与子孙），那么他们在前序和后序遍历序列中的先后顺序必定是相反的。在前序遍历序列中靠前的结点是另一个结点的祖先（或父母结点）。
+  
+  推论：如果两个结点群在前序与后序序列中的相对位置保持不变，那么他们必定有同一个祖先。
+       如果一个二叉树的前序与后序序列完全相反，那么没有一个结点有兄弟结点。（即所有结点都有祖孙关系）。
 
 ### Markdown
 
